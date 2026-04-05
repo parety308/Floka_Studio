@@ -1,6 +1,5 @@
 import React from "react";
 import { FaRegCirclePlay } from "react-icons/fa6";
-
 const HappyClient = () => {
     const logos = [
         "https://floka.casethemes.net/wp-content/uploads/2025/05/home-1-icon11.svg",
@@ -13,10 +12,14 @@ const HappyClient = () => {
         "https://floka.casethemes.net/wp-content/uploads/2025/05/home-1-icon11.svg",
     ];
 
+    const handlePlayReel = () => {
+        window.open("https://www.youtube.com/watch?v=SF4aHwxHtZ0", "_blank");
+    }
+
     return (
-        <div className="p-10 ">
+        <div className="lg:w-6xl mx-auto">
             {/* Top text */}
-            <div className="flex justify-between mb-5">
+            <div className="flex justify-between mb-5 ">
                 <p className="text-xs">HAPPY USERS</p>
                 <p className="text-xs">©2025 CASE-THEMES™ STUDIO</p>
             </div>
@@ -36,22 +39,38 @@ const HappyClient = () => {
                     </div>
                 ))}
             </div>
-            <div
-                className="bg-cover hover:items-center relative bg-center h-[80vh] flex items-center justify-center text-white rounded-lg"
-                style={{
-                    backgroundImage:
-                        "url(https://floka.casethemes.net/wp-content/uploads/2025/05/home1-bg-img11.webp)",
-                }}
-            >
-                <button className="absolute  bottom-5 left-5 flex items-center gap-2 bg-white px-2 py-1 rounded-full shadow-md">
+            <div className="group relative h-[80vh] rounded-lg overflow-hidden">
 
-                    {/* Circle Icon */}
-                    <span className="w-8 h-8 flex items-center justify-center  text-xl text-black ">
-                       <FaRegCirclePlay />
-                    </span>
+                {/* Background layer */}
+                <div
+                    className="
+      absolute inset-0 bg-cover bg-center
+      transition-all duration-500
+      group-hover:scale-110 group-hover:blur-sm
+    "
+                    style={{
+                        backgroundImage:
+                            "url(https://floka.casethemes.net/wp-content/uploads/2025/05/home1-bg-img11.webp)",
+                    }}
+                ></div>
 
-                    <span className="text-xs font-medium text-black">PLAY REEL</span>
-                </button>
+                {/* Content layer */}
+                <div className="relative z-10 w-full h-full flex items-center justify-center">
+
+                    <button
+                        onClick={handlePlayReel}
+                        className=" absolute bottom-5 left-5 flex items-center gap-2 bg-white px-2 py-1 rounded-full shadow-mdtransition-all duration-300group-hover:top-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2 group-hover:bottom-auto"
+                    >
+                        <span className="w-8 h-8 flex items-center justify-center text-xl text-black">
+                            <FaRegCirclePlay />
+                        </span>
+
+                        <span className="text-xs font-medium text-black">
+                            PLAY REEL
+                        </span>
+                    </button>
+
+                </div>
             </div>
         </div>
     );

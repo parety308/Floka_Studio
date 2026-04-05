@@ -1,24 +1,47 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const Fanfacts = () => {
     return (
-        <section className="bg-gray-100 border py-20 px-6 md:px-16">
+        <section className="lg:w-6xl mx-auto py-10 ">
 
             <div className="grid md:grid-cols-2 lg:grid-cols-2  gap-10">
 
                 {/*  LEFT IMAGE (STICKY) */}
                 <div >
-                    <div className="sticky top-10 border">
-                        <img
-                            src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-bg-img6-500x600.webp"
-                            alt=""
-                            className="w-full h-[500px] object-cover rounded-2xl"
-                        />
+                    <div className="sticky top-10">
+                        <motion.div
+                            className="relative w-full h-[500px] rounded-2xl overflow-hidden"
+                            whileHover="hover"
+                            initial="rest"
+                            animate="rest"
+                        >
+                            {/* Image */}
+                            <motion.img
+                                src="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-bg-img6-500x600.webp"
+                                alt=""
+                                className="w-full h-full object-cover"
+                                variants={{
+                                    rest: { scale: 1, rotate: 0 },
+                                    hover: { scale: 1.08, rotate: 1 },
+                                }}
+                                transition={{ duration: 0.1, ease: "easeOut" }}
+                            />
+
+                            {/* Subtle overlay (depth feel) */}
+                            <motion.div
+                                className="absolute inset-0 bg-black/0"
+                                variants={{
+                                    rest: { opacity: 0 },
+                                    hover: { opacity: 0.15 },
+                                }}
+                                transition={{ duration: 0.4 }}
+                            />
+                        </motion.div>
                     </div>
                 </div>
 
                 {/* RIGHT CONTENT */}
-                <div className="space-y-6 border">
+                <div className="space-y-6 ">
 
                     <p className="text-xs text-gray-500 tracking-widest">
                         FUN FACTS

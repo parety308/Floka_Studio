@@ -33,7 +33,7 @@ const PortfolioCard = ({ img }) => {
     return (
         <div >
 
-            {/* 🔥 IMAGE CONTAINER (important) */}
+            {/*  IMAGE CONTAINER  */}
             <div
                 ref={ref}
                 onMouseMove={handleMouseMove}
