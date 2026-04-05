@@ -80,7 +80,7 @@ const Experience = () => {
             ref={sectionRef}
             className="w-full py-10 px-4 md:px-6"
         >
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 max-w-6xl mx-auto h-[420px]">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 max-w-6xl w-full mx-auto h-[420px]">
 
                 {/* LEFT CARD */}
                 <div className="bg-white rounded-2xl p-6 flex flex-col justify-between shadow-sm h-full">

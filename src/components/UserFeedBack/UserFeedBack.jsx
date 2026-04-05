@@ -39,9 +39,32 @@ const bottomReveal = {
 
 const UserFeedBack = () => {
     return (
-        <section className="py-20 px-6 ">
-            <div className="max-w-7xl mx-auto">
+        <section className="  max-w-6xl mx-auto rounded-xl">
+            <div>
 
+
+                {/* Top label */}
+                <p className="text-xs tracking-widest text-gray-500 mb-6">
+                    USER FEEDBACK
+                </p>
+
+                {/* Divider */}
+                <div className="w-full h-px bg-gray-300 mb-10"></div>
+
+                {/* Right aligned content */}
+                <div className="max-w-3xl ml-auto text-right overflow-hidden mb-10">
+
+                    <motion.h1
+                        initial={{ x: 200, opacity: 0 }}   // start outside right
+                        whileInView={{ x: 0, opacity: 1 }} // move into position
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="text-3xl md:text-5xl font-semibold text-gray-900 leading-tight"
+                    >
+                        Strategy to build powerful <br />
+                        digital solutions.
+                    </motion.h1>
+
+                </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                     {feedbacks.map((item, index) => (
