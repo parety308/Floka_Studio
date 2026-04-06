@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 const OurTeam = () => {
     const [activeTab, setActiveTab] = useState("design");
 
-    // 🔥 LEFT IMAGE SCROLL CONTROL
+    //   LEFT IMAGE SCROLL CONTROL
     const imgRef = useRef(null);
 
     const { scrollYProgress } = useScroll({
@@ -87,8 +87,8 @@ const OurTeam = () => {
                         <button
                             onClick={() => setActiveTab("design")}
                             className={`${activeTab === "design"
-                                    ? "text-black font-medium"
-                                    : "text-gray-400"
+                                ? "text-black font-medium"
+                                : "text-gray-400"
                                 }`}
                         >
                             DESIGN TEAM
@@ -97,8 +97,8 @@ const OurTeam = () => {
                         <button
                             onClick={() => setActiveTab("dev")}
                             className={`${activeTab === "dev"
-                                    ? "text-black font-medium"
-                                    : "text-gray-400"
+                                ? "text-black font-medium"
+                                : "text-gray-400"
                                 }`}
                         >
                             DEVELOPMENT TEAM
@@ -117,7 +117,7 @@ const OurTeam = () => {
                         <span className="text-sm font-medium">JOIN WITH US</span>
                     </button>
 
-                    {/* 🔥 SCROLL FLOW IMAGE */}
+                    {/*   SCROLL FLOW IMAGE */}
                     <div
                         ref={imgRef}
                         className="relative overflow-hidden rounded-2xl"
@@ -143,7 +143,7 @@ const OurTeam = () => {
                             transition={{ delay: index * 0.1 }}
                             className="bg-gray-100 rounded-2xl p-4 group"
                         >
-                            <div className="overflow-hidden rounded-xl">
+                            <div className="overflow-hidden rounded-xl cursor-pointer bg-amber-100">
                                 <motion.img
                                     src={member.img}
                                     alt=""

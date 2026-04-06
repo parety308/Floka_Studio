@@ -22,7 +22,7 @@ const experties = [
     text: "Great in UI/UX",
     img: "https://i.pravatar.cc/40?img=4",
   },
-  // 🔥 Added 3 more
+  //   Added 3 more
   {
     name: "Emma",
     text: "Outstanding creative solutions",
@@ -43,7 +43,7 @@ const experties = [
 const ExpertiesSlider = () => {
   return (
     <div className="overflow-hidden w-full bg-black py-6 mt-10 rounded-lg">
-      
+
       <motion.div
         className="flex whitespace-nowrap"
         animate={{ x: ["0%", "-50%"] }}

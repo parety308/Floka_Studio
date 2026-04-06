@@ -47,49 +47,49 @@ const Portfolio = () => {
             <motion.div
                 className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6"
                 variants={container}
-                
+
             >
                 <motion.div variants={item}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, margin: "-100px" }}
-                duration={0.8}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: false, margin: "-100px" }}
+                    duration={0.8}
                 >
                     <PortfolioCard img="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-bg-img5-655x450.webp" />
                 </motion.div>
 
                 <motion.div variants={item}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, margin: "-100px" }}
-                duration={0.8}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: false, margin: "-100px" }}
+                    duration={0.8}
                 >
                     <PortfolioCard img="https://floka.casethemes.net/wp-content/uploads/2025/05/home3-accordion1-655x450.jpg" />
                 </motion.div>
 
-                <motion.div variants={item} className="col-span-2"
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, margin: "-100px" }}
-                duration={0.8}
+                <motion.div variants={item} className="lg:col-span-2 md:col-span-2"
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: false, margin: "-100px" }}
+                    duration={0.8}
                 >
                     <PortfolioCard img="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-bg-img3-1320x600.webp" />
                 </motion.div>
 
                 <motion.div variants={item}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, margin: "-100px" }}
-                duration={0.8}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: false, margin: "-100px" }}
+                    duration={0.8}
                 >
                     <PortfolioCard img="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-bg-img2-655x450.webp" />
                 </motion.div>
 
                 <motion.div variants={item}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, margin: "-100px" }}
-                duration={0.8}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: false, margin: "-100px" }}
+                    duration={0.8}
                 >
                     <PortfolioCard img="https://floka.casethemes.net/wp-content/uploads/2025/05/home1-bg-img1-655x450.webp" />
                 </motion.div>

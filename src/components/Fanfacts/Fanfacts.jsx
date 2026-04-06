@@ -51,7 +51,7 @@ const Fanfacts = () => {
                         Consistently delivering impactful results through a perfect blend of design and functionality.
                     </h1>
 
-                    <div className="grid grid-cols-2 gap-4 mt-8">
+                    <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-8">
 
                         {/* Card 1 */}
                         <div className="bg-white p-6 rounded-xl flex justify-between items-center">

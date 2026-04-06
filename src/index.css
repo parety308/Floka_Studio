@@ -1,2 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 12s linear infinite;
+  }
+}

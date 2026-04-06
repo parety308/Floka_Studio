@@ -80,12 +80,12 @@ const Experience = () => {
             ref={sectionRef}
             className="w-full py-10 px-4 md:px-6"
         >
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 max-w-6xl w-full mx-auto h-[420px]">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 max-w-6xl w-full mx-auto min-h-[420px]">
 
                 {/* LEFT CARD */}
                 <div className="bg-white rounded-2xl p-6 flex flex-col justify-between shadow-sm h-full">
                     <div>
-                        <h1 className="text-6xl font-bold text-black">
+                        <h1 className="text-4xl md:text-6xl font-bold text-black">
                             {years}<span>+</span>
                         </h1>
 
@@ -137,7 +137,7 @@ const Experience = () => {
                         </div></div>
 
                     {/* AWARDS */}
-                    <div className="absolute top-6 right-6 text-right text-white space-y-4">
+                    <div className="absolute top-4 right-4 md:top-6 md:right-6 text-right text-white space-y-4">
                         <div>
                             <p className="text-xs tracking-widest">ULTRA</p>
                             <p className="text-[10px] text-gray-300">PRESTIGIOUS</p>

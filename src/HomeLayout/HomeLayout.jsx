@@ -15,6 +15,8 @@ import OurTeam from '../components/OurTeam/OurTeam';
 import FAQSection from '../components/FAQSection/FAQSection';
 import ScrollLine from '../components/ScrollLine/ScrollLine';
 import Blog from '../components/Blog/Blog';
+import FooterCTA from '../components/FooterCTA/FooterCTA';
+import ApproachSection from '../components/ApproachSection/ApproachSection';
 
 
 const HomeLayout = () => {
@@ -23,13 +25,11 @@ const HomeLayout = () => {
             <CursorFollower />
             <Navbar />
             <Banner />
-
+            <ApproachSection />
             <Experience />
             <ExperienceSlider />
-
-            <main className='flex flex-col gap-30 my-30'>
+            <main className='flex flex-col gap-30 my-20'>
                 <Portfolio />
-
                 <MotionSection />
                 <HappyClient />
                 <UserFeedBack />
@@ -39,7 +39,9 @@ const HomeLayout = () => {
                 <FAQSection />
                 <ScrollLine />
                 <Blog />
+
             </main>
+            <FooterCTA />
             <Footer />
         </div>
     );

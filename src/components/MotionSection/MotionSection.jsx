@@ -11,7 +11,7 @@ const MotionSection = () => {
     offset: ["start start", "end end"],
   });
 
-  // 🔥 Second section animation
+  //   Second section animation
   const y = useTransform(scrollYProgress, [0.3, 0.7], ["100%", "0%"]);
 
   return (
